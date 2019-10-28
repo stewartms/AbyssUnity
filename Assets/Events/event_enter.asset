@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b2b8223ceede449a76b4e01a152cff, type: 3}
+  m_Name: event_enter
+  m_EditorClassIdentifier: 
+  eventScreens:
+  - text: A
+    portraitSprite: {fileID: 21300000, guid: 73a5afd416ef109459d581dffb209d8b, type: 3}
+    portraitText: ???
+    eventImage: {fileID: 21300000, guid: 84be9fb7e406c1a44a2ba67da4a4d825, type: 3}
+    optionList: []
+  - text: B
+    portraitSprite: {fileID: 21300000, guid: 73a5afd416ef109459d581dffb209d8b, type: 3}
+    portraitText: ???
+    eventImage: {fileID: 21300000, guid: 84be9fb7e406c1a44a2ba67da4a4d825, type: 3}
+    optionList:
+    - buttonText: Hello
+      buttonStuff:
+        newSegment: 1
+        newEventIndex: 2
+        newScene: 0
+        newEvent: {fileID: 0}
+        modCurHealth: 0
+        curHealthModifier: -10
+        modMaxHealth: 0
+        maxHealthModifier: 0
+        modMoney: 0
+        moneyModifier: 0
+        modMemory: 0
+        modDarkness: 0
+        mLighten: 0
+        mDarken: 0
+  - text: C
+    portraitSprite: {fileID: 21300000, guid: 73a5afd416ef109459d581dffb209d8b, type: 3}
+    portraitText: ???
+    eventImage: {fileID: 21300000, guid: 84be9fb7e406c1a44a2ba67da4a4d825, type: 3}
+    optionList:
+    - buttonText: Hello
+      buttonStuff:
+        newSegment: 1
+        newEventIndex: 3
+        newScene: 0
+        newEvent: {fileID: 0}
+        modCurHealth: 0
+        curHealthModifier: -10
+        modMaxHealth: 0
+        maxHealthModifier: 0
+        modMoney: 0
+        moneyModifier: 0
+        modMemory: 0
+        modDarkness: 0
+        mLighten: 0
+        mDarken: 0
+    - buttonText: Hello
+      buttonStuff:
+        newSegment: 1
+        newEventIndex: 3
+        newScene: 0
+        newEvent: {fileID: 0}
+        modCurHealth: 0
+        curHealthModifier: -10
+        modMaxHealth: 0
+        maxHealthModifier: 0
+        modMoney: 0
+        moneyModifier: 0
+        modMemory: 0
+        modDarkness: 0
+        mLighten: 0
+        mDarken: 0
+  - text: D
+    portraitSprite: {fileID: 21300000, guid: 73a5afd416ef109459d581dffb209d8b, type: 3}
+    portraitText: ???
+    eventImage: {fileID: 21300000, guid: 84be9fb7e406c1a44a2ba67da4a4d825, type: 3}
+    optionList:
+    - buttonText: Hello
+      buttonStuff:
+        newSegment: 1
+        newEventIndex: 4
+        newScene: 0
+        newEvent: {fileID: 0}
+        modCurHealth: 0
+        curHealthModifier: -10
+        modMaxHealth: 0
+        maxHealthModifier: 0
+        modMoney: 0
+        moneyModifier: 0
+        modMemory: 0
+        modDarkness: 0
+        mLighten: 0
+        mDarken: 0
+    - buttonText: Hello
+      buttonStuff:
+        newSegment: 1
+        newEventIndex: 4
+        newScene: 0
+        newEvent: {fileID: 0}
+        modCurHealth: 0
+        curHealthModifier: -10
+        modMaxHealth: 0
+        maxHealthModifier: 0
+        modMoney: 0
+        moneyModifier: 0
+        modMemory: 0
+        modDarkness: 0
+        mLighten: 0
+        mDarken: 0
+    - buttonText: Hello
+      buttonStuff:
+        newSegment: 1
+        newEventIndex: 4
+        newScene: 0
+        newEvent: {fileID: 0}
+        modCurHealth: 0
+        curHealthModifier: -10
+        modMaxHealth: 0
+        maxHealthModifier: 0
+        modMoney: 0
+        moneyModifier: 0
+        modMemory: 0
+        modDarkness: 0
+        mLighten: 0
+        mDarken: 0
+  - text: E
+    portraitSprite: {fileID: 21300000, guid: 73a5afd416ef109459d581dffb209d8b, type: 3}
+    portraitText: ???
+    eventImage: {fileID: 21300000, guid: 84be9fb7e406c1a44a2ba67da4a4d825, type: 3}
+    optionList:
+    - buttonText: BEEG LOOP
+      buttonStuff:
+        newSegment: 1
+        newEventIndex: 0
+        newScene: 0
+        newEvent: {fileID: 0}
+        modCurHealth: 0
+        curHealthModifier: -10
+        modMaxHealth: 0
+        maxHealthModifier: 0
+        modMoney: 0
+        moneyModifier: 0
+        modMemory: 0
+        modDarkness: 0
+        mLighten: 0
+        mDarken: 0
+    - buttonText: BEEG LOOP
+      buttonStuff:
+        newSegment: 1
+        newEventIndex: 0
+        newScene: 0
+        newEvent: {fileID: 0}
+        modCurHealth: 0
+        curHealthModifier: -10
+        modMaxHealth: 0
+        maxHealthModifier: 0
+        modMoney: 0
+        moneyModifier: 0
+        modMemory: 0
+        modDarkness: 0
+        mLighten: 0
+        mDarken: 0
+    - buttonText: BEEG LOOP
+      buttonStuff:
+        newSegment: 1
+        newEventIndex: 0
+        newScene: 0
+        newEvent: {fileID: 0}
+        modCurHealth: 0
+        curHealthModifier: -10
+        modMaxHealth: 0
+        maxHealthModifier: 0
+        modMoney: 0
+        moneyModifier: 0
+        modMemory: 0
+        modDarkness: 0
+        mLighten: 0
+        mDarken: 0
+    - buttonText: BEEG LOOP
+      buttonStuff:
+        newSegment: 1
+        newEventIndex: 0
+        newScene: 0
+        newEvent: {fileID: 0}
+        modCurHealth: 0
+        curHealthModifier: -10
+        modMaxHealth: 0
+        maxHealthModifier: 0
+        modMoney: 0
+        moneyModifier: 0
+        modMemory: 0
+        modDarkness: 0
+        mLighten: 0
+        mDarken: 0
+  startIndex: 0
