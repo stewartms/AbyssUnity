@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\EventClasses.cs" />
      <Compile Include="Assets\Scripts\GamePlayer.cs" />
      <Compile Include="Assets\Scripts\PlayerInitializer.cs" />
+     <Compile Include="Assets\Scripts\Shaders\DisplacementShader\DisplacementShaderMouseTester.cs" />
      <Compile Include="Assets\Scripts\StartGame.cs" />
      <Compile Include="Assets\Scripts\TypewriterEffect.cs" />
      <Compile Include="Assets\Scripts\UIController.cs" />

@@ -1,11 +1,11 @@
-﻿Shader "Unlit/ScrollingShader"
+﻿Shader "Custom/Unlit/ScrollingShader"
 {
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
 		_DispTex ("Displacement Texture", 2D) = "white" {}
-		_DispX ("Displacement X", Float) = 5
-        _DispY ("Displacement Y", Float) = 5
+		_DispX ("Displacement X", Float) = 0
+        _DispY ("Displacement Y", Float) = 0
 	}
 	SubShader
 	{
@@ -58,7 +58,7 @@
 				fixed4 disp = tex2D(_DispTex, i.uv1);
 
 				// sample the texture
-				fixed4 col = tex2D(_MainTex, i.uv + float2(_DispX, _DispY));
+				fixed4 col = tex2D(_MainTex, i.uv + (disp) * float2(_DispX, _DispY));
 				
 				return col;
 			}
