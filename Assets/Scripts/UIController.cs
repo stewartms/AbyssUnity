@@ -4,14 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [System.Serializable]
-public class Memory
-{
-    public Image mem;
-    public Sprite memFull;
-    public Sprite memBroken;
-}
-
-[System.Serializable]
 public class ButtonTraits
 {
     public GameObject buttonObj;
@@ -25,8 +17,6 @@ public class UIController : MonoBehaviour
     //Declaring UI Elements
 
     //MEMORIES
-
-    public List<Memory> memories;
 
     //BASIC STATS
     public Text curHealth;
@@ -99,45 +89,7 @@ public class UIController : MonoBehaviour
 
     void UpdateUIMemories()
     {
-        //RED
-        if (gamePlayer.MemRed == GamePlayer.Memory.full)
-        {
-            memories[0].mem.sprite = memories[0].memFull;
-        }
-        else if (gamePlayer.MemRed == GamePlayer.Memory.broken)
-        {
-            memories[0].mem.sprite = memories[0].memBroken;
-        }
-
-        //PURPLE
-        if (gamePlayer.MemPurple == GamePlayer.Memory.full)
-        {
-            memories[1].mem.sprite = memories[1].memFull;
-        }
-        else if (gamePlayer.MemPurple == GamePlayer.Memory.broken)
-        {
-            memories[1].mem.sprite = memories[1].memBroken;
-        }
-
-        //BLUE
-        if (gamePlayer.MemBlue == GamePlayer.Memory.full)
-        {
-            memories[2].mem.sprite = memories[2].memFull;
-        }
-        else if (gamePlayer.MemBlue == GamePlayer.Memory.broken)
-        {
-            memories[2].mem.sprite = memories[2].memBroken;
-        }
-
-        //ORANGE
-        if (gamePlayer.MemOrange == GamePlayer.Memory.full)
-        {
-            memories[3].mem.sprite = memories[3].memFull;
-        }
-        else if (gamePlayer.MemOrange == GamePlayer.Memory.broken)
-        {
-            memories[3].mem.sprite = memories[3].memBroken;
-        }
+        
     }
 
     void UpdateBasicStats()
@@ -163,7 +115,7 @@ public class UIController : MonoBehaviour
         portraitText.text = eventScreen.portraitText;
 
     }
-
+    
     void ButtonConfig(EventScreen eventScreen)
     {
         /*

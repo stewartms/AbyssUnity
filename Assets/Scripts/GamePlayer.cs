@@ -9,11 +9,11 @@ public class GamePlayer : MonoBehaviour
      */
 
     //Memories - functions pending
-    public enum Memory { full, broken, destroyed };
-    private Memory memRed = Memory.full;
-    private Memory memPurple = Memory.full;
-    private Memory memBlue = Memory.full;
-    private Memory memOrange = Memory.full;
+    public enum Memory { FULL, BROKEN, DESTROYED };
+    private Memory memRed = Memory.FULL;
+    private Memory memPurple = Memory.FULL;
+    private Memory memBlue = Memory.FULL;
+    private Memory memOrange = Memory.FULL;
 
     //Basic stats to track
     private int healthMax = 50;
