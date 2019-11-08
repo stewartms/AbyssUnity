@@ -28,9 +28,7 @@ public class GamePlayer : MonoBehaviour
     private PlayerInitializer playerInit;
 
     //UI
-
-    public GameObject canvas;
-    private UIController uiController;
+    public UIController uiController;
 
 
     /*
@@ -51,23 +49,6 @@ public class GamePlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (playerInitializerObj != null)
-        {
-            playerInit = playerInitializerObj.GetComponent<PlayerInitializer>();
-        }
-        MemRed = playerInit.memRedStart;
-        MemPurple = playerInit.memPurpleStart;
-        MemBlue = playerInit.memBlueStart;
-        MemOrange = playerInit.memOrangeStart;
-
-        HealthMax = playerInit.startHealth;
-        HealthCurrent = playerInit.startHealth;
-        Gold = playerInit.startGold;
-
-        if (canvas != null)
-        {
-            uiController = canvas.GetComponent<UIController>();
-        }
         uiController.UpdateUI();
     }
 

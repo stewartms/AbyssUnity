@@ -1593,19 +1593,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efaab1fd8043bf94f8daa4929b5e8720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  memories:
-  - mem: {fileID: 0}
-    memFull: {fileID: 21300000, guid: 09260fd3dd14f5642b37b6e5cd398c79, type: 3}
-    memBroken: {fileID: 21300000, guid: 4f0584ac44b789544a9cf3f3849d38ae, type: 3}
-  - mem: {fileID: 0}
-    memFull: {fileID: 21300000, guid: bef54da7102a3814a8bd6b4ebb2740ce, type: 3}
-    memBroken: {fileID: 21300000, guid: 343839beaffbb7b48a145dd767f8de94, type: 3}
-  - mem: {fileID: 0}
-    memFull: {fileID: 21300000, guid: b01691da293587d4fbea79f2e240bb22, type: 3}
-    memBroken: {fileID: 21300000, guid: 8e06512b61d6e6b46be02358701137fb, type: 3}
-  - mem: {fileID: 0}
-    memFull: {fileID: 21300000, guid: 5fc5e6abd58c78a4782cb7535fc5addf, type: 3}
-    memBroken: {fileID: 21300000, guid: 21c78c0ef6d541a448cbc3306e277380, type: 3}
   curHealth: {fileID: 1201654825}
   curGold: {fileID: 131818285}
   eventImage: {fileID: 1438320522}
