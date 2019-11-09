@@ -17,45 +17,74 @@ MonoBehaviour:
     portraitSprite: {fileID: 21300000, guid: 1a8f9bdc668cdda4d82430927ee40d31, type: 3}
     portraitText: Stew
     eventImage: {fileID: 21300000, guid: 918a3153112d3e342b2d5f0cdf6673e9, type: 3}
-    optionList: []
-  - text: 
+    optionList:
+    - prompt: 
+      modifierType: 0
+      newScreenIndex: 0
+      newEvent: {fileID: 0}
+      curHealthModifier: 0
+      maxHealthModifier: 0
+      moneyModifier: 0
+      mLighten: 0
+      mDarken: 0
+    - prompt: 
+      modifierType: 0
+      newScreenIndex: 0
+      newEvent: {fileID: 0}
+      curHealthModifier: 0
+      maxHealthModifier: 0
+      moneyModifier: 0
+      mLighten: 0
+      mDarken: 0
+    - prompt: 
+      modifierType: 0
+      newScreenIndex: 0
+      newEvent: {fileID: 0}
+      curHealthModifier: 0
+      maxHealthModifier: 0
+      moneyModifier: 0
+      mLighten: 0
+      mDarken: 0
+    - prompt: 
+      modifierType: 0
+      newScreenIndex: 0
+      newEvent: {fileID: 0}
+      curHealthModifier: 0
+      maxHealthModifier: 0
+      moneyModifier: 0
+      mLighten: 0
+      mDarken: 0
+  - text: 'wawawaw
+
+'
     portraitSprite: {fileID: 21300000, guid: 1a8f9bdc668cdda4d82430927ee40d31, type: 3}
     portraitText: Stew
     eventImage: {fileID: 21300000, guid: 918a3153112d3e342b2d5f0cdf6673e9, type: 3}
     optionList:
-    - buttonText: Steal his shit
-      buttonStuff:
-        newSegment: 1
-        newEventIndex: 2
-        newScene: 0
-        newEvent: {fileID: 0}
-        modCurHealth: 0
-        curHealthModifier: 0
-        modMaxHealth: 0
-        maxHealthModifier: 0
-        modMoney: 0
-        moneyModifier: 0
-        modMemory: 0
-        modDarkness: 0
-        mLighten: 0
-        mDarken: 0
-    - buttonText: Juggle him (Requires 100 Strength)
-      buttonStuff:
-        newSegment: 1
-        newEventIndex: 3
-        newScene: 0
-        newEvent: {fileID: 0}
-        modCurHealth: 1
-        curHealthModifier: -49
-        modMaxHealth: 0
-        maxHealthModifier: 0
-        modMoney: 0
-        moneyModifier: 0
-        modMemory: 0
-        modDarkness: 0
-        mLighten: 0
-        mDarken: 0
+    - prompt: 
+      modifierType: 0
+      newScreenIndex: 0
+      newEvent: {fileID: 0}
+      curHealthModifier: 0
+      maxHealthModifier: 0
+      moneyModifier: 0
+      mLighten: 0
+      mDarken: 0
+    - prompt: 
+      modifierType: 0
+      newScreenIndex: 0
+      newEvent: {fileID: 0}
+      curHealthModifier: 0
+      maxHealthModifier: 0
+      moneyModifier: 0
+      mLighten: 0
+      mDarken: 0
   - text: You have stolen his shit
+    portraitSprite: {fileID: 21300000, guid: 73a5afd416ef109459d581dffb209d8b, type: 3}
+    portraitText: Sheehan
+    eventImage: {fileID: 21300000, guid: 455ab765946b1d94598a9e76e5c00165, type: 3}
+    optionList: []
+  - text: Ah he his too heavy - you juggle him but are severely wounded
     portraitSprite: {fileID: 21300000, guid: 73a5afd416ef109459d581dffb209d8b, type: 3}
     portraitText: Sheehan
     eventImage: {fileID: 21300000, guid: 455ab765946b1d94598a9e76e5c00165, type: 3}

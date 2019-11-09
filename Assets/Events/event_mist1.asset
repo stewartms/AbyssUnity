@@ -13,85 +13,33 @@ MonoBehaviour:
   m_Name: event_mist1
   m_EditorClassIdentifier: 
   eventScreens:
-  - text: You encounter a friendly <color=cyan>mistsmith</color>, who offers to sell
-      you a <color=cyan>potion</color>. They say that if you are ever in danger, you
-      can <color=lime>drink it for protection</color>. Do you wish to buy it?
-    portraitSprite: {fileID: 21300000, guid: 73a5afd416ef109459d581dffb209d8b, type: 3}
-    portraitText: Wanderer
-    eventImage: {fileID: 21300000, guid: de016fc123136f843a5364770fc921b1, type: 3}
-    optionList:
-    - buttonText: Buy Potion
-      buttonStuff:
-        newSegment: 1
-        newEventIndex: 1
-        newScene: 0
-        newEvent: {fileID: 0}
-        modCurHealth: 1
-        curHealthModifier: -12
-        modMaxHealth: 0
-        maxHealthModifier: 0
-        modMoney: 0
-        moneyModifier: 0
-        modMemory: 0
-        modDarkness: 0
-        mLighten: 0
-        mDarken: 0
-  - text: You guzzle the potion down
-    portraitSprite: {fileID: 21300000, guid: 73a5afd416ef109459d581dffb209d8b, type: 3}
-    portraitText: Wanderer
-    eventImage: {fileID: 21300000, guid: 455ab765946b1d94598a9e76e5c00165, type: 3}
-    optionList:
-    - buttonText: Option 1
-      buttonStuff:
-        newSegment: 1
-        newEventIndex: 2
-        newScene: 0
-        newEvent: {fileID: 0}
-        modCurHealth: 0
-        curHealthModifier: -10
-        modMaxHealth: 0
-        maxHealthModifier: 0
-        modMoney: 0
-        moneyModifier: 0
-        modMemory: 0
-        modDarkness: 0
-        mLighten: 0
-        mDarken: 0
-    - buttonText: Option 2
-      buttonStuff:
-        newSegment: 1
-        newEventIndex: 3
-        newScene: 0
-        newEvent: {fileID: 0}
-        modCurHealth: 0
-        curHealthModifier: 0
-        modMaxHealth: 0
-        maxHealthModifier: 0
-        modMoney: 0
-        moneyModifier: 0
-        modMemory: 0
-        modDarkness: 0
-        mLighten: 0
-        mDarken: 0
-  - text: INDEX 2
-    portraitSprite: {fileID: 21300000, guid: 1a8f9bdc668cdda4d82430927ee40d31, type: 3}
-    portraitText: Flowero
-    eventImage: {fileID: 21300000, guid: 7b20e3391ca0ebe4fab2c51dd0b8a36e, type: 3}
-    optionList:
-    - buttonText: BROKEN BUTTON
-      buttonStuff:
-        newSegment: 0
-        newEventIndex: 0
-        newScene: 0
-        newEvent: {fileID: 0}
-        modCurHealth: 0
-        curHealthModifier: 0
-        modMaxHealth: 0
-        maxHealthModifier: 0
-        modMoney: 0
-        moneyModifier: 0
-        modMemory: 0
-        modDarkness: 0
-        mLighten: 0
-        mDarken: 0
-  startIndex: 0
+  - title: ROOT
+    text: 
+    portraitSprite: {fileID: 0}
+    portraitText: 
+    eventImage: {fileID: 0}
+    optionList: []
+  - title: 
+    text: 
+    portraitSprite: {fileID: 0}
+    portraitText: 
+    eventImage: {fileID: 0}
+    optionList: []
+  - title: 
+    text: 
+    portraitSprite: {fileID: 0}
+    portraitText: 
+    eventImage: {fileID: 0}
+    optionList: []
+  - title: 
+    text: Hello there!
+    portraitSprite: {fileID: 0}
+    portraitText: 
+    eventImage: {fileID: 0}
+    optionList: []
+  - title: 
+    text: 
+    portraitSprite: {fileID: 0}
+    portraitText: 
+    eventImage: {fileID: 0}
+    optionList: []
