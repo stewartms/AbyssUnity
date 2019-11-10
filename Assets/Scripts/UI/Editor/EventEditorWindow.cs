@@ -79,7 +79,7 @@ public class EventEditorWindow : ExtendedEditorWindow
         currentProperty = eventScreenList.serializedProperty.GetArrayElementAtIndex (eventScreenList.index);
 
         
-        GUILayout.Label("Main Data", headerStyle);
+        GUILayout.Label("Screen", headerStyle);
 
         DrawField("screenID", true);
         DrawField("text", true);
@@ -126,8 +126,15 @@ public class EventEditorWindow : ExtendedEditorWindow
             
             //EditorGUILayout.PropertyField(effects, true);
 
-            
             if(effects != null) {
+
+                Dictionary<string, int> screenListNames = new Dictionary<string, int>();
+                int count = 0;
+                foreach(SerializedProperty p in eventScreenList.serializedProperty) {
+                    screenListNames.Add(p.FindPropertyRelative("screenID").stringValue, count);
+                    count++;
+                }
+
                 for(int i = 0; i < effects.arraySize; i++) {
                     EditorGUILayout.BeginHorizontal();
                     EditorGUILayout.BeginVertical();
@@ -142,7 +149,18 @@ public class EventEditorWindow : ExtendedEditorWindow
                         case 0:
                             break;
                         case 1:
+                            EditorGUILayout.BeginVertical();
                             EditorGUILayout.PropertyField(effect.FindPropertyRelative("newScreenID"), true);
+                            int index = -1;
+                            if(screenListNames.TryGetValue(effect.FindPropertyRelative("newScreenID").stringValue, out index)) {
+                                if(GUILayout.Button("Goto")) {
+                                    eventScreenList.index = index;
+                                    return;
+                                }
+                            } else {
+                                EditorGUILayout.HelpBox("No event screen associated with this ID!", MessageType.Warning);
+                            }
+                            EditorGUILayout.EndVertical();
                             break;
                         case 2:
                             EditorGUILayout.PropertyField(effect.FindPropertyRelative("mod"), true);
