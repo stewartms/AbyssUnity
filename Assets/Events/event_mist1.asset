@@ -13,33 +13,45 @@ MonoBehaviour:
   m_Name: event_mist1
   m_EditorClassIdentifier: 
   eventScreens:
-  - title: ROOT
-    text: 
+  - title: INTRO
+    text: A friendly mistsmith appears, offering a potion.
     portraitSprite: {fileID: 0}
     portraitText: 
-    eventImage: {fileID: 0}
-    optionList: []
-  - title: 
-    text: 
-    portraitSprite: {fileID: 0}
-    portraitText: 
-    eventImage: {fileID: 0}
-    optionList: []
-  - title: 
-    text: 
-    portraitSprite: {fileID: 0}
-    portraitText: 
-    eventImage: {fileID: 0}
-    optionList: []
-  - title: 
+    eventImage: {fileID: 21300000, guid: de016fc123136f843a5364770fc921b1, type: 3}
+    optionList:
+    - prompt: Drink it
+      optionEffects: []
+    - prompt: Leave
+      optionEffects:
+      - type: 1
+        newScreenTitle: Timing
+        mod: 0
+        memory: 0
+      - type: 0
+        newScreenTitle: 
+        mod: 0
+        memory: 0
+  - title: WANNA
     text: Hello there!
     portraitSprite: {fileID: 0}
     portraitText: 
     eventImage: {fileID: 0}
     optionList: []
-  - title: 
-    text: 
+  - title: ASDasdASDa
+    text: Hello there!
     portraitSprite: {fileID: 0}
     portraitText: 
     eventImage: {fileID: 0}
+    optionList: []
+  - title: ASDasdASDa
+    text: Hello there!
+    portraitSprite: {fileID: 0}
+    portraitText: 
+    eventImage: {fileID: 0}
+    optionList: []
+  - title: LEFT
+    text: Hello there!
+    portraitSprite: {fileID: 0}
+    portraitText: 
+    eventImage: {fileID: 21300000, guid: 64d31c08860dd1e4787f8f7d79774b8e, type: 3}
     optionList: []

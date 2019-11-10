@@ -39,6 +39,7 @@ public class UIEventController : MonoBehaviour
     public Image backgroundImage;
 
     public Event curEvent;
+    private Dictionary<string, int> titleToIndexDictionary;
 
     private Player player;
     //private EventList eventList;
@@ -68,6 +69,8 @@ public class UIEventController : MonoBehaviour
         memoryToggles = memoriesParent.GetComponentsInChildren<Toggle>();
         Button[] buttons = buttonsParent.GetComponentsInChildren<Button>();
 
+        SetEvent(curEvent);
+
         buttonTraits = new ButtonTraits[4];
         for(int i = 0; i < 4; i++) {
             buttonTraits[i] = new ButtonTraits();
@@ -75,6 +78,14 @@ public class UIEventController : MonoBehaviour
             buttonTraits[i].buttonText = buttons[i].GetComponentInChildren<Text>();
         }
         
+    }
+
+    public void SetEvent(Event e) {
+        curEvent = e;
+        titleToIndexDictionary = new Dictionary<string, int>();
+        for(int i = 0; i < curEvent.eventScreens.Count; i++) {
+            titleToIndexDictionary.Add(curEvent.eventScreens[i].screenID, i);
+        }
     }
 
     public void UpdateUI()
@@ -119,7 +130,7 @@ public class UIEventController : MonoBehaviour
     
     void DrawButtons(EventScreen eventScreen)
     {
-        int numButtons = eventScreen.optionList.Length;
+        int numButtons = eventScreen.optionList.Count;
 
         eventImage.gameObject.SetActive(numButtons < 3);
 
@@ -139,8 +150,31 @@ public class UIEventController : MonoBehaviour
     {
         Option button = curScreen.optionList[buttonID];
 
-        foreach(IOptionEffect optionEffect in button.optionEffects) {
-            optionEffect.CauseEffect(player, this);
+        foreach(OptionEffect optionEffect in button.optionEffects) {
+            switch(optionEffect.type) {
+                case OptionEffect.OptionEffectType.NONE:
+                break;
+                case OptionEffect.OptionEffectType.NEW_SCREEN:
+                    if(!titleToIndexDictionary.TryGetValue(optionEffect.newScreenID, out curIndex)) {
+                        Debug.LogWarning("ScreenID -" + optionEffect.newScreenID + "- not found!");
+                    }
+                    break;
+                case OptionEffect.OptionEffectType.MOD_HP:
+                    player.ModHealthCurrent(optionEffect.mod);
+                    break;
+                case OptionEffect.OptionEffectType.MOD_MAXHP:
+                    player.ModHealthMax(optionEffect.mod);
+                    break;
+                case OptionEffect.OptionEffectType.MOD_MONEY:
+                    player.ModGold(optionEffect.mod);
+                    break;
+                case OptionEffect.OptionEffectType.MOD_MEMORY:
+                    Debug.Log("Modding memory!");
+                    player.ModMemoryStatus(optionEffect.memory, optionEffect.mod);
+                    break;
+                case OptionEffect.OptionEffectType.MOD_DARKNESS:
+                break;
+            }
         }
 
         UpdateUI();

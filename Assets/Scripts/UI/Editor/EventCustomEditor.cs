@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using UnityEditor.Callbacks;
-using UnityEditor.UIElements;
-using UnityEngine.UIElements;
 
 public class AssetHandler {
     public static bool OpenEditor(int instanceID, int line) {
@@ -18,30 +16,20 @@ public class AssetHandler {
 [CustomEditor(typeof(Event))]
 public class EventCustomEditor : Editor
 {
+
+    bool showDefault;
+
     public override void OnInspectorGUI() {
+
         if(GUILayout.Button("Open Editor")) {
             EventEditorWindow.Open((Event) target);
+        }
+
+        GUILayout.Label("DEBUGGER");
+        showDefault = EditorGUILayout.Foldout(showDefault, "Show default inspector for debugging.");
+        if(showDefault) {
+            DrawDefaultInspector();
         }
     }
 }
 
-
-
-[CustomPropertyDrawer(typeof(EventScreen))]
-public class EventScreenCustomEditor : PropertyDrawer {
-
-    public override VisualElement CreatePropertyGUI(SerializedProperty property) {
-        // Create property container element.
-        var container = new VisualElement();
-
-        // Create property fields.
-        var titleField = new PropertyField(property.FindPropertyRelative("title"));
-        var titleField2 = new PropertyField(property.FindPropertyRelative("title"));
-        
-
-        // Add fields to the contai
-        container.Add(titleField);
-        return container;
-    }
-
-}

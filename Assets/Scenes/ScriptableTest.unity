@@ -1590,7 +1590,7 @@ MonoBehaviour:
   portraitImage: {fileID: 1041205677}
   portraitText: {fileID: 1689060325}
   backgroundImage: {fileID: 1669967372}
-  curEvent: {fileID: 11400000, guid: a2a07b3b9ea3dc94b984345be50c5128, type: 2}
+  curEvent: {fileID: 11400000, guid: 364f8730dba54014eaf77b48faca2851, type: 2}
   curIndex: 0
 --- !u!224 &663985992 stripped
 RectTransform:

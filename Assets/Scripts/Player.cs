@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     }
 
     public void ModMemoryStatus(Memory memory, int mod) {
-        memArray[(int) memory] = (MemoryStatus) Mathf.Clamp((int) memArray[(int) memory] + mod, 0, 2);
+        memArray[(int) memory] = (MemoryStatus) Mathf.Clamp((int) memArray[(int) memory] - mod, 0, 2);
     }
 
     public MemoryStatus GetRedStatus() {return GetMemoryStatus(Memory.RED);}

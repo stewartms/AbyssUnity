@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b2b8223ceede449a76b4e01a152cff, type: 3}
+  m_Name: event_test
+  m_EditorClassIdentifier: 
+  eventScreens:
+  - screenID: START
+    text: A wild mistsmith appears. They offer you a potion to drink.
+    portraitSprite: {fileID: 0}
+    portraitText: 
+    eventImage: {fileID: 21300000, guid: de016fc123136f843a5364770fc921b1, type: 3}
+    optionList:
+    - prompt: Drink the potion
+      optionEffects:
+      - type: 1
+        newScreenID: DRANK FIRST
+        mod: 0
+        memory: 0
+      - type: 2
+        newScreenID: 
+        mod: -24
+        memory: 0
+    - prompt: Leave
+      optionEffects:
+      - type: 1
+        newScreenID: LEFT
+        mod: 0
+        memory: 0
+  - screenID: DRANK FIRST
+    text: You drank the potion, feeling a harsh burning sensation encompass your body.
+      The mintsmith laughs and offers you another two potions, a red one and a green
+      one. A swirling feeling in your head prevents you from refusing.
+    portraitSprite: {fileID: 0}
+    portraitText: 
+    eventImage: {fileID: 21300000, guid: de016fc123136f843a5364770fc921b1, type: 3}
+    optionList:
+    - prompt: Drink red
+      optionEffects:
+      - type: 1
+        newScreenID: DRANK RED
+        mod: 25
+        memory: 0
+      - type: 2
+        newScreenID: 
+        mod: 25
+        memory: 0
+    - prompt: Drink green
+      optionEffects:
+      - type: 1
+        newScreenID: DRANK GREEN
+        mod: -2
+        memory: 0
+      - type: 5
+        newScreenID: 
+        mod: -2
+        memory: 0
+  - screenID: DRANK RED
+    text: You drank the red potion and are rejuvenated.
+    portraitSprite: {fileID: 0}
+    portraitText: 
+    eventImage: {fileID: 21300000, guid: de016fc123136f843a5364770fc921b1, type: 3}
+    optionList:
+    - prompt: Leave
+      optionEffects:
+      - type: 1
+        newScreenID: LEFT
+        mod: 0
+        memory: 0
+  - screenID: DRANK GREEN
+    text: You drank the green potion and feel a memory escape your grasp.
+    portraitSprite: {fileID: 0}
+    portraitText: 
+    eventImage: {fileID: 21300000, guid: de016fc123136f843a5364770fc921b1, type: 3}
+    optionList:
+    - prompt: Leave
+      optionEffects:
+      - type: 1
+        newScreenID: LEFT
+        mod: 0
+        memory: 0
+  - screenID: LEFT
+    text: You decided to leave.
+    portraitSprite: {fileID: 0}
+    portraitText: 
+    eventImage: {fileID: 21300000, guid: 64d31c08860dd1e4787f8f7d79774b8e, type: 3}
+    optionList: []
